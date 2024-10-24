@@ -1,0 +1,61 @@
+﻿body {
+    background-color: #1C2A2D; /* Dark phthalo green background */
+    color: #EAEAEA; /* Soft light color for text */
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.quote-container {
+    display: flex;
+    align-items: stretch; /* Stretch items to fill container height */
+    background-color: #2E4B4D; /* Muted phthalo green */
+    border-left: 4px solid #E57C25; /* Burnt sienna */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 1000px;
+}
+
+    .quote-container:hover {
+        transform: translateY(-3px) translateX(+3px) translate3d(+3px, 0px, 3px);
+        box-shadow: 0 6px 30px rgba(0, 0, 0, 0.7);
+    }
+
+.quote-image {
+    width: 150px; /* Fixed width */
+    height: 220px; /* Fixed height */
+    margin-right: 20px; /* Space between image and text */
+    border-radius: 5px; /* Optional: soften image corners */
+    object-fit: cover; /* Ensures the image covers the area */
+}
+
+.quote-content {
+    flex: 1; /* Allow the content to take up remaining space */
+    text-align: left; /* Align text to the left */
+}
+
+.quote-text {
+    font-size: 24px;
+    line-height: 1.5;
+    color: #F5F5F5; /* Soft off-white for clarity */
+    font-family: 'Playfair Display', serif;
+}
+
+.quote-time {
+    font-size: 42px; /* Slightly larger for emphasis */
+    color: #009B77; /* Rich phthalo green */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9), 0 0 5px rgba(255, 255, 255, 0); /* Darker shadow with soft glow */
+    font-family: 'Playfair Display', serif;
+}
+
+.quote-author {
+    text-align: right;
+    font-size: 18px;
+    color: #CCCCCC; /* Soft gray for authors */
+    margin-top: 10px;
+    font-style: italic;
+}
